@@ -19,9 +19,7 @@ function Registers(){
             {
                     show? <Stack sx={{ width: '90%', marginTop: "10px", marginLeft : "5%", marginRight: "%"}} spacing={2}>
                     <Alert severity="success">Data telah ditambahkan</Alert>
-                </Stack> : <Stack sx={{ width: '90%', marginTop: "10px", marginLeft : "5%", marginRight: "%"}} spacing={2}>
-                            <Alert severity="error">Data Tidak Ditemukan</Alert>
-                        </Stack>
+                </Stack> : null
                 }
                 
                 <div className="Login" style={{marginTop : '10px', marginLeft : '30px'}}>

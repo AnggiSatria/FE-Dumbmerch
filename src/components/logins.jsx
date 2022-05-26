@@ -23,10 +23,8 @@ function Logins(){
             <div className="All" style={{display : 'flex', flexDirection : 'column', width : '350px', backgroundColor : 'rgba(34, 32, 33, 0.8)', borderRadius : '10px'}}>
                 {
                     show? <Stack sx={{ width: '90%', marginTop: "10px", marginLeft : "5%", marginRight: "%"}} spacing={2}>
-                    <Alert severity="success">Login Berhasil</Alert>
-                </Stack> : <Stack sx={{ width: '90%', marginTop: "10px", marginLeft : "5%", marginRight: "%"}} spacing={2}>
                             <Alert severity="error">Data Tidak Ditemukan</Alert>
-                        </Stack>
+                        </Stack> : null
                 }
 
                 <div className="Login" style={{marginTop : '10px', marginLeft : '30px'}}>
@@ -55,5 +53,6 @@ function Logins(){
         </div>
     );
 }
+
 
 export default Logins;

@@ -11,11 +11,6 @@ import Typography from '@mui/material/Typography';
 
 
 function Login(){
-
-    const theme = () => {
-        document.body.style.backgroundColor="white"
-      }
-      document.body.style.backgroundColor="black"
     
       const MaterialUISwitch = styled(Switch)(({ theme }) => ({
         width: 62,
@@ -71,6 +66,7 @@ function Login(){
                     <FormControlLabel
                         control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked onClick={theme}/>}
                         label="Light Mode / Dark Mode"
+                        style={{color : "white"}}
                     />
                     </FormGroup>
                 </div>
@@ -87,6 +83,12 @@ function Login(){
         </div>
     );
 }
+
+const theme = () => {
+  document.body.style.backgroundColor="white"
+  document.body.style.color="black"
+}
+document.body.style.backgroundColor="black"
 
 
 export default Login;
