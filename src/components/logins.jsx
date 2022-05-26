@@ -1,5 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import * as React from 'react';
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
+import { useState } from "react";
 
 function Logins(){
 
@@ -9,14 +13,23 @@ function Logins(){
         navigate("/profile")
     }
 
+    const [show, setShow] = React.useState(false);
+
+    const handleAlert = () => setShow(true);
+
     return (
         <div>
             <div className="All" style={{display : 'flex', flexDirection : 'column', width : '350px', backgroundColor : 'grey', borderRadius : '10px'}}>
-                <div className="Login" style={{marginTop : '30px', marginLeft : '30px'}}>
+                <Stack sx={{ width: '100%', marginTop: "10px"}} spacing={2}>
+                    <Alert severity="error">This is an error alert — check it out!</Alert>
+                </Stack>
+
+                <div className="Login" style={{marginTop : '10px', marginLeft : '30px'}}>
                     <h1 style={{fontSize : '30px', color : 'white'}}>Login</h1>
                 </div>
 
                 <div className="page" style={{marginLeft : '30px'}}>
+                    
                     <div className="Email">
                         <input type="text" placeholder="Email" style={{width: '90%', height : '40px', borderRadius : '5px', border : 'none'}}/>
                     </div>
