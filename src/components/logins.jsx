@@ -20,9 +20,13 @@ function Logins(){
     return (
         <div>
             <div className="All" style={{display : 'flex', flexDirection : 'column', width : '350px', backgroundColor : 'grey', borderRadius : '10px'}}>
-                <Stack sx={{ width: '100%', marginTop: "10px"}} spacing={2}>
-                    <Alert severity="error">This is an error alert — check it out!</Alert>
-                </Stack>
+                {
+                    show? <Stack sx={{ width: '90%', marginTop: "10px", marginLeft : "5%", marginRight: "%"}} spacing={2}>
+                    <Alert severity="success">Login Berhasil</Alert>
+                </Stack> : <Stack sx={{ width: '90%', marginTop: "10px", marginLeft : "5%", marginRight: "%"}} spacing={2}>
+                            <Alert severity="error">Data Tidak Ditemukan</Alert>
+                        </Stack>
+                }
 
                 <div className="Login" style={{marginTop : '10px', marginLeft : '30px'}}>
                     <h1 style={{fontSize : '30px', color : 'white'}}>Login</h1>
@@ -39,7 +43,7 @@ function Logins(){
                     </div>
 
                     <div className="button" style={{marginTop : '15px', marginBottom : '30px'}}>
-                        <Button variant="danger" onClick={route} style={{height : '40px', width : '90%', textDecoration : 'none', color : 'white', textAlign : 'center', borderRadius : '5px'}}>Login</Button>
+                        <Button variant="danger" onClick={handleAlert} style={{height : '40px', width : '90%', textDecoration : 'none', color : 'white', textAlign : 'center', borderRadius : '5px'}}>Login</Button>
                     </div>
                 </div>
                 
