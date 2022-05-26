@@ -87,7 +87,7 @@ const ComplainAdmin = () => {
             <div className="Zero" style={{height : '100%', border : '1px solid white', marginLeft : '10px', marginRight : '10px'}}></div>
 
             <div className="right" style={{flex : '75%', display : 'flex', flexDirection : 'column'}}>
-                <div className="up" style={{display : 'flex', alignItems : 'flex-start', flex : '90%'}}>
+                <div className="up" style={{display : 'flex', alignItems : 'flex-end', flex : '90%', marginBottom : "20px"}}>
                     <Right />
                 </div>
 
