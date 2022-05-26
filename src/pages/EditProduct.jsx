@@ -20,7 +20,7 @@ const EditProduct = () => {
     const theme = () => {
         document.body.style.backgroundColor="white"
       }
-      document.body.style.backgroundColor="black"
+      document.body.style.backgroundColor="rgba(0, 0, 0, 0.97)"
     
       const MaterialUISwitch = styled(Switch)(({ theme }) => ({
         width: 62,

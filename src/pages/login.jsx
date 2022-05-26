@@ -87,7 +87,7 @@ const theme = () => {
   document.body.style.backgroundColor="white"
   document.body.style.color="black"
 }
-document.body.style.backgroundColor="black"
+document.body.style.backgroundColor="rgba(0, 0, 0, 0.97)"
 
 
 export default Login;
