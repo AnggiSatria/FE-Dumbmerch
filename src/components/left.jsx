@@ -13,10 +13,10 @@ import Typography from '@mui/material/Typography';
 
 export default function Left() {
     return (
-      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'black' }}>
+      <List sx={{ width: '100%', maxWidth: 360}}>
         <ListItem alignItems="flex-start">
           <ListItemAvatar>
-            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            <Avatar alt="Remy Sharp" src="/broken-image.jpg"/>
           </ListItemAvatar>
           <ListItemText style={{color : "white"}}
             primary="Brunch this weekend?"
@@ -38,7 +38,7 @@ export default function Left() {
         <Divider variant="inset" component="li" />
         <ListItem alignItems="flex-start">
           <ListItemAvatar>
-            <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+            <Avatar alt="Travis Howard" src="/broken-image.jpg" />
           </ListItemAvatar>
           <ListItemText style={{color : "white"}}
             primary="Summer BBQ"
@@ -60,7 +60,7 @@ export default function Left() {
         <Divider variant="inset" component="li" />
         <ListItem alignItems="flex-start">
           <ListItemAvatar>
-            <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+            <Avatar alt="Cindy Baker" src="/broken-image.jpg" />
           </ListItemAvatar>
           <ListItemText style={{color : "white"}}
             primary="Oui Oui"

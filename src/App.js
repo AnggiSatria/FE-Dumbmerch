@@ -6,10 +6,11 @@ import DetailProduct from "./pages/detail page";
 import Profile from "./pages/profile";
 import Category from "./pages/category";
 import Product from "./pages/product";
-import Complain from "./pages/complain";
+import Complain from "./pages/complainUser";
 import Error from "./pages/Error";
 import EditCategory from "./pages/EditCategory";
 import EditProduct from "./pages/EditProduct";
+import ComplainAdmin from "./pages/complainAdmin";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
         <Route path="*" element={<Error />}/>
         <Route path="/edit-category" element={<EditCategory />}/>
         <Route path="/edit-product" element={<EditProduct />}/>
-
+        <Route path="/complain-admin" element={<ComplainAdmin />}/>
       </Routes>
     </Router>
   );

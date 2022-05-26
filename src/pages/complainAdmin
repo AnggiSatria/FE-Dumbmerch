@@ -1,7 +1,7 @@
-import Navbar from '../components/NavbarAdmin';
-import { Button } from 'react-bootstrap';
-import All from '../Assets/All.module.css';
-import { useNavigate } from 'react-router-dom';
+import NavbarAdmin from '../components/NavbarAdmin';
+import Contact from '../components/contact';
+import Left from '../components/left';
+import Right from '../components/right';
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
@@ -10,12 +10,7 @@ import Switch from '@mui/material/Switch';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-
-const EditProduct = () => {
-    const Navigate = useNavigate;
-    const handleNavigate = () => {
-        Navigate("/product")
-    }
+const ComplainAdmin = () => {
 
     const theme = () => {
         document.body.style.backgroundColor="white"
@@ -71,11 +66,11 @@ const EditProduct = () => {
 
   return (
     <div>
-        <nav style={{height: '7vh'}}>
-            <Navbar/>
-        </nav>
+        <div className="Navbar" style={{height : '15vh'}}>
+            <NavbarAdmin />
+        </div>
 
-        <div className="switch" style={{width : "100%", display : "flex"}}>
+        <div className="switch" style={{width: "100%", display: "flex"}}>
             <FormGroup style={{margin : "auto"}}>
             <FormControlLabel
                 control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked onClick={theme}/>}
@@ -84,41 +79,25 @@ const EditProduct = () => {
             </FormGroup>
         </div>
 
-        <div className="All" style={{height : '93vh', marginTop : '100px'}}>
-            <div className="teks" style={{marginLeft : '30px'}}>
-                <h4 style={{color: 'white'}}>Edit Category</h4>
+        <div className="Page" style={{height : '85vh', display : 'flex', marginTop : '50px'}}>
+            <div className="left" style={{flex : '25%', display : 'flex'}}>
+                <Left />
             </div>
+            
+            <div className="Zero" style={{height : '100%', border : '1px solid white', marginLeft : '10px', marginRight : '10px'}}></div>
 
-            <div className="body" style={{marginTop : '30px'}}>
-                <form action="">
-                    <div className="file" style={{width : '100%'}}>
-                        <input type="file" className={All.file} style={{color : 'white', width : "96%", marginLeft : '1%', marginRight : '1%'}}/>
-                    </div>
+            <div className="right" style={{flex : '75%', display : 'flex', flexDirection : 'column'}}>
+                <div className="up" style={{display : 'flex', alignItems : 'flex-start', flex : '90%'}}>
+                    <Right />
+                </div>
 
-                    <div className="name" style={{width : '100%', marginTop : '20px'}}>
-                        <input type="text" style={{width : '96%', height : '40px', marginLeft : '1%', marginRight : '1%', borderRadius : '5px'}}/>
-                    </div>
-
-                    <div className="desc" style={{width : '100%', marginTop : '10px'}}>
-                        <textarea name="" id="" cols="30" rows="10" style={{width : '96%', marginLeft : '1%', marginRight : "1%", height : '40%', borderRadius : '5px', resize : 'none'}}></textarea>
-                    </div>
-
-                    <div className="price" style={{width : '100%', marginTop : '10px'}}>
-                        <input type="text" style={{width : '96%', height : '40px', marginLeft : '1%', marginRight : '1%', borderRadius : '5px'}}/>
-                    </div>
-
-                    <div className="stock" style={{width : '100%', marginTop : '10px'}}>
-                        <input type="text" style={{width : '96%', height : '40px', marginLeft : '1%', marginRight : '1%', borderRadius : '5px'}}/>
-                    </div>
-
-                    <div className="button" style={{marginTop : '30px', width : "100%", marginLeft : '1%', marginRight : '1%'}}>
-                        <Button onClick={handleNavigate} variant="success" style={{width : '96%'}}>Save</Button>{' '}
-                    </div>
-                </form>
+                <div className="down" style={{flex : '10%', width : '100%', alignItems : 'flex-end'}}>
+                    <Contact />
+                </div>
             </div>
         </div>
     </div>
   )
 }
 
-export default EditProduct;
+export default ComplainAdmin;
