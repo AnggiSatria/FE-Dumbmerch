@@ -15,7 +15,7 @@ const NavbarAdmin = () => {
 
             <div className="right" style={{display : 'flex', flex : '50%', justifyContent : 'flex-end', marginRight : '30px'}}>
                 <ul style={{display : 'flex', listStyleType : 'none', alignItems : 'center'}}>
-                    <Link  to="/complain" style={{paddingRight : '20px', textDecoration : 'none'}}><li className={Font.Font} style={{color : 'white', textDecoration : 'none'}}>Complain</li></Link>
+                    <Link  to="/complain-admin" style={{paddingRight : '20px', textDecoration : 'none'}}><li className={Font.Font} style={{color : 'white', textDecoration : 'none'}}>Complain</li></Link>
                     <Link to="/category" style={{paddingRight : '20px', textDecoration : "none"}}><li className={Font.Font} style={{color: 'white', textDecoration : 'none'}}>Category</li></Link>
                     <Link  to="/product"style={{paddingRight : '20px', textDecoration : 'none'}}><li className={Font.Font} style={{color : 'white', textDecoration : 'none'}}>Product</li></Link>
                     <Link  to="/" style={{textDecoration : 'none'}}><li className={Font.Font} style={{color : 'white', textDecoration : 'none'}}>Logout</li></Link>
