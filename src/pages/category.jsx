@@ -5,8 +5,9 @@ import TableListCategory from "../components/tablelistcategory";
 import React from 'react'
 
 const Category = () => {
+  document.body.style.backgroundColor="black"
   return (
-    <div className={All.body1}>
+    <div>
         <div className="Navbar" style={{height : '15vh'}}>
             <Navbar/>
         </div>

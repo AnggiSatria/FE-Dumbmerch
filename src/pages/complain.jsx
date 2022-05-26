@@ -5,8 +5,9 @@ import Left from '../components/left';
 import Right from '../components/right';
 
 const Complain = () => {
+    document.body.style.backgroundColor="black"
   return (
-    <div style={{backgroundColor : 'black'}}>
+    <div>
         <div className="Navbar" style={{height : '15vh'}}>
             <Navbar />
         </div>

@@ -4,8 +4,9 @@ import All from '../Assets/All.module.css';
 import Mouse from "../Assets/mouses.jpg"
 
 const DetailPage = () => {
+  document.body.style.backgroundColor="black"
   return (
-    <div className={All.body1}>
+    <div>
         <div className="Navbar" style={{height : '15vh'}}>
             <Navbar />
         </div>

@@ -41,13 +41,13 @@ const TableListCategory = () => {
           
           <div className="button" style={{display : "flex", marginTop : "30px", justifyContent : "flex-end"}}>
             <div className="btn1">
-              <Button variant="success" onClick={handleClose}>
+              <Button variant="success">
                 Yes
               </Button>
             </div>
             
             <div className="btn2" style={{marginLeft : '10px'}}>
-              <Button variant="danger">No</Button>
+              <Button onClick={handleClose} variant="danger">No</Button>
             </div>
             
           </div>

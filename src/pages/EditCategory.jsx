@@ -12,8 +12,10 @@ const EditCategory = () => {
         Navigate("/category");
     }
 
+    document.body.style.backgroundColor="black"
+
   return (
-    <div className={All.body} style={{height : '100%'}}>
+    <div style={{height : '100%'}}>
         <nav style={{height : '7vh'}}>
             <NavbarAdmin/>
         </nav>

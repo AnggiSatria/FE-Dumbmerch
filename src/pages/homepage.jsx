@@ -3,8 +3,9 @@ import Cards from "../components/card";
 import All from "../Assets/All.module.css";
 
 function Homepage(){
+    document.body.style.backgroundColor="black"
     return (
-        <div className={All.body1}>
+        <div>
             <div className="Navbar" style={{height : '15vh'}}>
                 <Navbar />
             </div>
