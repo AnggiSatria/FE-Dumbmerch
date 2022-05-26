@@ -19,7 +19,7 @@ function Logins(){
 
     return (
         <div>
-            <div className="All" style={{display : 'flex', flexDirection : 'column', width : '350px', backgroundColor : 'grey', borderRadius : '10px'}}>
+            <div className="All" style={{display : 'flex', flexDirection : 'column', width : '350px', backgroundColor : 'rgba(34, 32, 33, 0.8)', borderRadius : '10px'}}>
                 {
                     show? <Stack sx={{ width: '90%', marginTop: "10px", marginLeft : "5%", marginRight: "%"}} spacing={2}>
                     <Alert severity="success">Login Berhasil</Alert>
@@ -43,7 +43,10 @@ function Logins(){
                     </div>
 
                     <div className="button" style={{marginTop : '15px', marginBottom : '30px'}}>
-                        <Button variant="danger" onClick={handleAlert} style={{height : '40px', width : '90%', textDecoration : 'none', color : 'white', textAlign : 'center', borderRadius : '5px'}}>Login</Button>
+                        <Button variant="danger" onClick={() => {
+                            handleAlert()
+                            route()
+                        }} style={{height : '40px', width : '90%', textDecoration : 'none', color : 'white', textAlign : 'center', borderRadius : '5px'}}>Login</Button>
                     </div>
                 </div>
                 

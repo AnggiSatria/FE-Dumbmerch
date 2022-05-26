@@ -14,7 +14,7 @@ function Registers(){
 
     return (
         <div>
-            <div className="All" style={{display : 'flex', flexDirection : 'column', width : '350px', backgroundColor : 'grey', borderRadius : '10px'}}>
+            <div className="All" style={{display : 'flex', flexDirection : 'column', width : '350px', backgroundColor : 'rgba(34, 32, 33, 0.8)', borderRadius : '10px'}}>
                 
             {
                     show? <Stack sx={{ width: '90%', marginTop: "10px", marginLeft : "5%", marginRight: "%"}} spacing={2}>

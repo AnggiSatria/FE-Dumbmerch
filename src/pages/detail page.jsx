@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from '../components/navbar';
 import All from '../Assets/All.module.css';
-import Mouse from "../Assets/mouses.jpg"
+import Mouse from "../Assets/mouses.jpg";
+import { Button } from 'react-bootstrap';
 
 const DetailPage = () => {
   document.body.style.backgroundColor="black"
@@ -38,7 +39,7 @@ const DetailPage = () => {
                 <h2>Rp.300.000,-</h2>
               </div>
 
-              <button style={{width : '100%', height : '40px', backgroundColor : 'red', color : 'white'}}>Buy</button>
+              <Button variant='danger' style={{width : '100%', height : '40px', backgroundColor : 'red', color : 'white'}}>Buy</Button>
           </div>
         </div>
     </div>
